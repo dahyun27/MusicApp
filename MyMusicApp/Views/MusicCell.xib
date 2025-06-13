@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="146" id="KGk-i7-Jjw" customClass="MusicCell" customModule="MyMusicApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="428" height="146"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="428" height="146"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wMv-FC-oQv">
+                        <rect key="frame" x="20" y="23" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="Q7m-AM-25n"/>
+                            <constraint firstAttribute="width" constant="100" id="nfx-kk-yud"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="7Y5-oE-nM9">
+                        <rect key="frame" x="140" y="10" width="268" height="126"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Song Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NOy-sd-htq">
+                                <rect key="frame" x="0.0" y="0.0" width="268" height="19.333333333333332"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="artist name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IFp-0a-7tJ">
+                                <rect key="frame" x="0.0" y="25.333333333333336" width="268" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="album name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pFh-BR-Eql">
+                                <rect key="frame" x="0.0" y="48.333333333333343" width="268" height="59.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="release date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aYR-AT-RIa">
+                                <rect key="frame" x="0.0" y="114" width="268" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="wMv-FC-oQv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="4S4-Cv-S8E"/>
+                    <constraint firstItem="7Y5-oE-nM9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Dbr-T3-lhU"/>
+                    <constraint firstItem="7Y5-oE-nM9" firstAttribute="leading" secondItem="wMv-FC-oQv" secondAttribute="trailing" constant="20" id="FJj-ZL-7Y9"/>
+                    <constraint firstItem="wMv-FC-oQv" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="aGP-kK-PAb"/>
+                    <constraint firstAttribute="bottom" secondItem="7Y5-oE-nM9" secondAttribute="bottom" constant="10" id="cXu-03-b54"/>
+                    <constraint firstAttribute="trailing" secondItem="7Y5-oE-nM9" secondAttribute="trailing" constant="20" id="jpK-OZ-mI6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="albumNameLabel" destination="pFh-BR-Eql" id="bVD-Wd-yY2"/>
+                <outlet property="artistNameLabel" destination="IFp-0a-7tJ" id="dFw-aa-j9z"/>
+                <outlet property="mainImageView" destination="wMv-FC-oQv" id="Yhd-lz-Kt5"/>
+                <outlet property="releaseDateLabel" destination="aYR-AT-RIa" id="xxl-qT-xGk"/>
+                <outlet property="songNameLabel" destination="NOy-sd-htq" id="43R-Gd-X56"/>
+            </connections>
+            <point key="canvasLocation" x="140.45801526717557" y="20.422535211267608"/>
+        </tableViewCell>
+    </objects>
+</document>
