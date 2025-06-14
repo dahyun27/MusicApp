@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -39,17 +40,43 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="album name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pFh-BR-Eql">
-                                <rect key="frame" x="0.0" y="48.333333333333343" width="268" height="59.666666666666657"/>
+                                <rect key="frame" x="0.0" y="48.333333333333336" width="268" height="23.666666666666664"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="release date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aYR-AT-RIa">
-                                <rect key="frame" x="0.0" y="114" width="268" height="12"/>
+                                <rect key="frame" x="0.0" y="78" width="268" height="12"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E1C-gA-Kgi">
+                                <rect key="frame" x="0.0" y="96" width="268" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sxu-vV-eZG" userLabel="Save Button">
+                                        <rect key="frame" x="238" y="0.0" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="a0N-Al-QkK"/>
+                                            <constraint firstAttribute="width" constant="30" id="a2g-Rh-yDA"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="" image="heart" catalog="system">
+                                            <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="saveButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="k9g-zG-hha"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="6bU-ro-5LN"/>
+                                    <constraint firstAttribute="trailing" secondItem="sxu-vV-eZG" secondAttribute="trailing" id="U87-L4-kkl"/>
+                                    <constraint firstItem="sxu-vV-eZG" firstAttribute="centerY" secondItem="E1C-gA-Kgi" secondAttribute="centerY" id="lIM-Z5-2v9"/>
+                                </constraints>
+                            </view>
                         </subviews>
                     </stackView>
                 </subviews>
@@ -68,9 +95,16 @@
                 <outlet property="artistNameLabel" destination="IFp-0a-7tJ" id="dFw-aa-j9z"/>
                 <outlet property="mainImageView" destination="wMv-FC-oQv" id="Yhd-lz-Kt5"/>
                 <outlet property="releaseDateLabel" destination="aYR-AT-RIa" id="xxl-qT-xGk"/>
+                <outlet property="saveButton" destination="sxu-vV-eZG" id="sUr-eT-8sS"/>
                 <outlet property="songNameLabel" destination="NOy-sd-htq" id="43R-Gd-X56"/>
             </connections>
             <point key="canvasLocation" x="140.45801526717557" y="20.422535211267608"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="heart" catalog="system" width="128" height="107"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
