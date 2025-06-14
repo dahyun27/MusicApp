@@ -23,6 +23,10 @@ class SavedMusicCell: UITableViewCell {
     @IBOutlet weak var updateButton: UIButton!
     
     
+    var musicSaved: MusicSaved? {
+        
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
