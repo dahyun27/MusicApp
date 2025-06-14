@@ -65,6 +65,9 @@
                                         <state key="normal" title="" image="heart" catalog="system">
                                             <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="saveButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Igg-qM-FIG"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -101,6 +104,9 @@
                                         <state key="normal" title="UPDATE">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="updateButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Sdo-os-w6c"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
